@@ -31,7 +31,7 @@ export default class ProductDetails {
         name.textContent = this.product.NameWithoutBrand;
         img.src = this.product.Image;
         img.alt = this.product.NameWithoutBrand;
-        price.textContent = `${this.product.ListPrice}`;
+        price.textContent = `$${this.product.ListPrice}`;
         color.textContent = this.product.Colors[0].ColorName;
         descrp.innerHTML = this.product.DescriptionHtmlSimple;
         cartBtn.textContent = "Add to Cart";
