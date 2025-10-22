@@ -84,6 +84,29 @@ p {
   line-height: 1;
 }
 
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cat-item {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  align-items: center;
+}
+
+.category img {
+  width: 110px;
+  height: 80px;
+}
+
+.category a {
+  text-decoration: none;
+  color: #303030;
+}
+
 .logo--square img {
   width: 90px;
   height: 90px;
