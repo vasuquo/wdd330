@@ -3,7 +3,14 @@ import { getLocalStorage } from "./utils.mjs";
 function renderCartContents() {
   const cartItems = getLocalStorage("so-cart");
   const htmlItems = cartItems.map((item) => cartItemTemplate(item));
+  const total = cartItems.reduce((accum, item) => accum + item.FinalPrice, 0);
   document.querySelector(".product-list").innerHTML = htmlItems.join("");
+  if (total > 0) {
+      document.querySelector(".cart-footer").style.display = "block";
+      document.querySelector(".cart-total").innerHTML = `Total: $${total}`;
+  }     
+  else
+    document.querySelector(".cart-footer").style.display = "none";
 }
 
 function cartItemTemplate(item) {
