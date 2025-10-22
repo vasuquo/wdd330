@@ -265,7 +265,7 @@ button {
 }
 
 .cart-footer {
-  display: block;
+  display: none;
 }
 
 @media screen and (min-width: 500px) {
