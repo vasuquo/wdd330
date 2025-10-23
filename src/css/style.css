@@ -265,7 +265,18 @@ button {
 }
 
 .cart-footer {
-  display: none;
+  display: none;  
+}
+
+.total-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 180px;
+}
+
+footer {
+  text-align: center;
 }
 
 @media screen and (min-width: 500px) {
